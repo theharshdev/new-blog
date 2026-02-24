@@ -3,7 +3,7 @@
 
 :root {
   --primary: #29aaff;
-  --secondary: #f9e500;
+  --secondary: #f9c300;
   --text: #112d4e;
   --background: #f9f7f7;
 }
@@ -27,4 +27,56 @@
 
 button {
   cursor: pointer;
+}
+
+.blog-content {
+  h1 {
+    font-size: 52px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 800;
+    font-family: "Hubot Sans", sans-serif;
+    margin: 20px 0 12px 0;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  ul li {
+    margin-bottom: 8px;
+  }
+  a {
+    font-size: 20px;
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+::selection {
+  background-color: var(--secondary);
+  color: var(--background);
 }

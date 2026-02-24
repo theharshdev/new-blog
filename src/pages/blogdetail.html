@@ -1,0 +1,910 @@
+<!-- npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>My Blog Website</title>
+  </head>
+  <body class="bg-background font-primary text-text max-w-6xl mx-auto px-4">
+    <!-- navbar -->
+    <nav
+      class="bg-background border-b border-text text-text flex flex-col items-center gap-6 font-secondary sticky z-50 top-0 w-full py-4"
+    >
+      <div class="flex justify-between items-center gap-6 w-full">
+        <a href="./index.html" class="text-2xl font-bold uppercase w-fit"
+          >My Logo</a
+        >
+        <div class="flex gap-4 items-center justify-end">
+          <!-- Theme Button -->
+          <button
+            id="theme-btn"
+            type="button"
+            class="text-xs hover:text-primary transition duration-300"
+          >
+            <div class="flex items-center gap-1 dark:hidden">
+              <i class="bi bi-brightness-low text-xl"></i>
+              Dark
+            </div>
+            <div class="dark:flex items-center gap-1 hidden">
+              <i class="bi bi-brightness-high text-sm"></i>
+              Light
+            </div>
+          </button>
+          <!-- Newletter form -->
+          <div class="flex gap-1">
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              class="block w-full bg-background border border-text text-xs outline-0 font-medium p-2"
+            />
+            <button
+              type="submit"
+              class="bg-secondary text-xs font-semibold border-0 outline-0 p-2 dark:text-background hover:bg-primary transition duration-300"
+            >
+              Subscribe!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center gap-6 w-full">
+        <input
+          type="search"
+          placeholder="Search any topic"
+          class="block w-full py-2.5 px-4 text-sm font-medium border border-text outline-0 max-w-sm"
+        />
+        <div
+          class="text-lg leading-none font-medium flex justify-end items-center gap-5"
+        >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Entertainment</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Tech</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Automobile</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Weather</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Politics</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Media</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >More</a
+          >
+          <button
+            type="button"
+            class="text-3xl leading-none border-0 outline-0 hover:text-primary transition duration-300"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <main class="mb-20 flex flex-col gap-8">
+      <div class="bg-secondary h-[40dvh] mt-6"></div>
+      <img
+        src="../assets/images/img1.jpg"
+        alt="..."
+        class="block w-full max-w-2xl -mt-20 pl-8"
+      />
+      <h1
+        class="font-secondary text-6xl text-secondary leading-none font-extrabold"
+      >
+        The Future of Technology: A Deep Dive into Modern Innovations
+      </h1>
+      <p class="text-xl font-secondary leading-tight max-w-2xl">
+        Technology is evolving at an unprecedented pace. From artificial
+        intelligence to quantum computing, modern innovations are reshaping
+        industries, economies, and everyday life. In this comprehensive blog, we
+        explore the major technological trends, their impact on society, and
+        what the future holds for developers, businesses, and users.
+      </p>
+    </main>
+    <!-- article part 1 -->
+    <section class="grid grid-cols-3 gap-6 items-start">
+      <div class="flex flex-col gap-8 col-span-2 leading-tight blog-content">
+        <h2>Artificial Intelligence and Machine Learning</h2>
+        <p>
+          Artificial Intelligence (AI) has moved beyond research labs and into
+          real-world applications. Machine Learning (ML), a subset of AI,
+          enables systems to learn from data and improve over time without
+          explicit programming.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h3>How AI is Transforming Industries</h3>
+        <ul>
+          <li>
+            Healthcare: AI assists in diagnostics, drug discovery, and
+            personalized treatment plans.
+          </li>
+          <li>
+            Finance: Fraud detection, algorithmic trading, and risk assessment.
+          </li>
+          <li>
+            E-commerce: Personalized recommendations and predictive analytics.
+          </li>
+          <li>
+            Customer Support: Chatbots and virtual assistants handling real-time
+            queries.
+          </li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          AI-driven automation is also transforming workplaces. While automation
+          increases efficiency, it also demands new skills from the workforce,
+          particularly in data science, programming, and system design.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h2>The Rise of Web Development Technologies</h2>
+        <p>
+          Web development has significantly evolved over the past decade. Modern
+          web applications are faster, more interactive, and highly scalable.
+        </p>
+        <h3>Frontend Evolution</h3>
+        <p>
+          Frontend development now focuses on performance, responsiveness, and
+          user experience. Technologies like component-based architecture,
+          virtual DOM, and state management have revolutionized how developers
+          build interfaces.
+        </p>
+        <ul>
+          <li>Single Page Applications (SPAs)</li>
+          <li>Progressive Web Apps (PWAs)</li>
+          <li>Server-Side Rendering (SSR)</li>
+          <li>Static Site Generation (SSG)</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h3>Backend Modernization</h3>
+        <p>
+          Backend systems have shifted toward microservices architecture and
+          serverless computing. APIs play a critical role in connecting frontend
+          applications with backend services.
+        </p>
+        <ul>
+          <li>RESTful APIs</li>
+          <li>GraphQL</li>
+          <li>Cloud-native architecture</li>
+          <li>Containerization and orchestration</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h2>Cloud Computing and DevOps</h2>
+        <p>
+          Cloud computing enables businesses to scale infrastructure on demand.
+          Instead of investing in physical servers, organizations now rely on
+          cloud platforms for hosting, storage, and computing power.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h3>Benefits of Cloud Technology</h3>
+        <ul>
+          <li>Cost efficiency</li>
+          <li>High availability</li>
+          <li>Automatic scaling</li>
+          <li>Global deployment</li>
+        </ul>
+        <p>
+          DevOps practices integrate development and operations teams, ensuring
+          continuous integration and continuous deployment (CI/CD). Automation
+          tools streamline testing, monitoring, and deployment pipelines.
+        </p>
+        <h2>Cybersecurity in the Digital Age</h2>
+        <p>
+          As digital transformation increases, cybersecurity threats are
+          becoming more sophisticated. Organizations must prioritize data
+          protection and system security.
+        </p>
+        <h3>Common Cyber Threats</h3>
+        <ul>
+          <li>Phishing attacks</li>
+          <li>Ransomware</li>
+          <li>Distributed Denial of Service (DDoS)</li>
+          <li>Data breaches</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Modern security strategies include multi-factor authentication,
+          encryption, zero-trust architecture, and regular vulnerability
+          assessments.
+        </p>
+        <h2>Blockchain and Decentralized Systems</h2>
+        <p>
+          Blockchain technology is no longer limited to cryptocurrencies. It
+          provides a secure and transparent method of recording transactions.
+        </p>
+        <h3>Applications of Blockchain</h3>
+        <ul>
+          <li>Supply chain transparency</li>
+          <li>Digital identity verification</li>
+          <li>Smart contracts</li>
+          <li>Decentralized finance (DeFi)</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Decentralization reduces reliance on central authorities and enhances
+          trust through distributed consensus mechanisms.
+        </p>
+        <h2>Internet of Things (IoT)</h2>
+        <p>
+          The Internet of Things connects everyday devices to the internet,
+          enabling communication and automation. Smart homes, wearable devices,
+          and industrial IoT systems are transforming how we interact with
+          technology.
+        </p>
+        <h3>Impact of IoT</h3>
+        <ul>
+          <li>Improved efficiency in manufacturing</li>
+          <li>Smart energy management</li>
+          <li>Real-time health monitoring</li>
+          <li>Enhanced logistics tracking</li>
+        </ul>
+        <p>
+          However, IoT also introduces security challenges, requiring robust
+          device authentication and secure communication protocols.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h2>Quantum Computing</h2>
+        <p>
+          Quantum computing leverages quantum mechanics to process complex
+          computations exponentially faster than classical computers.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Although still in experimental stages, quantum computing has the
+          potential to revolutionize cryptography, materials science, and
+          artificial intelligence.
+        </p>
+        <h2>The Role of Data in Modern Technology</h2>
+        <p>
+          Data is often called the new oil. Organizations collect vast amounts
+          of data to gain insights, improve decision-making, and personalize
+          user experiences.
+        </p>
+        <h3>Big Data Technologies</h3>
+        <ul>
+          <li>Distributed databases</li>
+          <li>Real-time analytics</li>
+          <li>Data warehousing</li>
+          <li>Business intelligence tools</li>
+        </ul>
+        <p>
+          Ethical data usage and privacy regulations are becoming increasingly
+          important in a data-driven world.
+        </p>
+        <h2>9. The Future of Software Development</h2>
+        <p>
+          Software development is moving toward automation, low-code platforms,
+          and AI-assisted coding. Developers are focusing more on architecture,
+          scalability, and system optimization.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>Key future trends include:</p>
+        <ul>
+          <li>AI-powered development tools</li>
+          <li>Edge computing</li>
+          <li>5G connectivity</li>
+          <li>Augmented and Virtual Reality</li>
+        </ul>
+        <h2>Conclusion</h2>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Technology continues to reshape our world at a rapid pace. From
+          artificial intelligence to quantum computing, each innovation brings
+          opportunities and challenges. Staying updated, learning continuously,
+          and adapting to change are essential for anyone involved in the tech
+          industry.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          The future belongs to those who embrace innovation, prioritize
+          security, and build scalable solutions that enhance human life. As we
+          move forward, collaboration between developers, businesses, and
+          policymakers will determine how technology shapes the next generation.
+        </p>
+      </div>
+      <div class="col-span-1 flex flex-col gap-4 sticky top-48 bg-primary p-8">
+        <p
+          class="text-5xl font-extrabold leading-tight font-secondary absolute top-0 left-0 -translate-y-2/3"
+        >
+          Just For You
+        </p>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+        >
+          <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+          <h3
+            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
+          >
+            why frontend developers should care about web accessibility in 2026
+          </h3>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+        >
+          <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+          <h3
+            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
+          >
+            mastering component reusability in modern react projects
+          </h3>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+        >
+          <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+          <h3
+            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
+          >
+            how to structure scalable css architecture for large applications
+          </h3>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+        >
+          <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+          <h3
+            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
+          >
+            understanding server components and the future of rendering
+          </h3>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+        >
+          <p class="text-xs font-secondary whitespace-nowrap">Nov-2025</p>
+          <h3
+            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
+          >
+            practical tips to improve lighthouse performance scores
+          </h3>
+        </a>
+      </div>
+    </section>
+    <!-- article part 2 -->
+    <section class="grid grid-cols-3 gap-6 items-start my-12">
+      <div class="flex flex-col gap-8 col-span-2 leading-tight blog-content">
+        <h2>Artificial Intelligence and Machine Learning</h2>
+        <p>
+          Artificial Intelligence (AI) has moved beyond research labs and into
+          real-world applications. Machine Learning (ML), a subset of AI,
+          enables systems to learn from data and improve over time without
+          explicit programming.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h3>How AI is Transforming Industries</h3>
+        <ul>
+          <li>
+            Healthcare: AI assists in diagnostics, drug discovery, and
+            personalized treatment plans.
+          </li>
+          <li>
+            Finance: Fraud detection, algorithmic trading, and risk assessment.
+          </li>
+          <li>
+            E-commerce: Personalized recommendations and predictive analytics.
+          </li>
+          <li>
+            Customer Support: Chatbots and virtual assistants handling real-time
+            queries.
+          </li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          AI-driven automation is also transforming workplaces. While automation
+          increases efficiency, it also demands new skills from the workforce,
+          particularly in data science, programming, and system design.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h2>The Rise of Web Development Technologies</h2>
+        <p>
+          Web development has significantly evolved over the past decade. Modern
+          web applications are faster, more interactive, and highly scalable.
+        </p>
+        <h3>Frontend Evolution</h3>
+        <p>
+          Frontend development now focuses on performance, responsiveness, and
+          user experience. Technologies like component-based architecture,
+          virtual DOM, and state management have revolutionized how developers
+          build interfaces.
+        </p>
+        <ul>
+          <li>Single Page Applications (SPAs)</li>
+          <li>Progressive Web Apps (PWAs)</li>
+          <li>Server-Side Rendering (SSR)</li>
+          <li>Static Site Generation (SSG)</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h3>Backend Modernization</h3>
+        <p>
+          Backend systems have shifted toward microservices architecture and
+          serverless computing. APIs play a critical role in connecting frontend
+          applications with backend services.
+        </p>
+        <ul>
+          <li>RESTful APIs</li>
+          <li>GraphQL</li>
+          <li>Cloud-native architecture</li>
+          <li>Containerization and orchestration</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h2>Cloud Computing and DevOps</h2>
+        <p>
+          Cloud computing enables businesses to scale infrastructure on demand.
+          Instead of investing in physical servers, organizations now rely on
+          cloud platforms for hosting, storage, and computing power.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h3>Benefits of Cloud Technology</h3>
+        <ul>
+          <li>Cost efficiency</li>
+          <li>High availability</li>
+          <li>Automatic scaling</li>
+          <li>Global deployment</li>
+        </ul>
+        <p>
+          DevOps practices integrate development and operations teams, ensuring
+          continuous integration and continuous deployment (CI/CD). Automation
+          tools streamline testing, monitoring, and deployment pipelines.
+        </p>
+        <h2>Cybersecurity in the Digital Age</h2>
+        <p>
+          As digital transformation increases, cybersecurity threats are
+          becoming more sophisticated. Organizations must prioritize data
+          protection and system security.
+        </p>
+        <h3>Common Cyber Threats</h3>
+        <ul>
+          <li>Phishing attacks</li>
+          <li>Ransomware</li>
+          <li>Distributed Denial of Service (DDoS)</li>
+          <li>Data breaches</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Modern security strategies include multi-factor authentication,
+          encryption, zero-trust architecture, and regular vulnerability
+          assessments.
+        </p>
+        <h2>Blockchain and Decentralized Systems</h2>
+        <p>
+          Blockchain technology is no longer limited to cryptocurrencies. It
+          provides a secure and transparent method of recording transactions.
+        </p>
+        <h3>Applications of Blockchain</h3>
+        <ul>
+          <li>Supply chain transparency</li>
+          <li>Digital identity verification</li>
+          <li>Smart contracts</li>
+          <li>Decentralized finance (DeFi)</li>
+        </ul>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Decentralization reduces reliance on central authorities and enhances
+          trust through distributed consensus mechanisms.
+        </p>
+        <h2>Internet of Things (IoT)</h2>
+        <p>
+          The Internet of Things connects everyday devices to the internet,
+          enabling communication and automation. Smart homes, wearable devices,
+          and industrial IoT systems are transforming how we interact with
+          technology.
+        </p>
+        <h3>Impact of IoT</h3>
+        <ul>
+          <li>Improved efficiency in manufacturing</li>
+          <li>Smart energy management</li>
+          <li>Real-time health monitoring</li>
+          <li>Enhanced logistics tracking</li>
+        </ul>
+        <p>
+          However, IoT also introduces security challenges, requiring robust
+          device authentication and secure communication protocols.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <h2>Quantum Computing</h2>
+        <p>
+          Quantum computing leverages quantum mechanics to process complex
+          computations exponentially faster than classical computers.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Although still in experimental stages, quantum computing has the
+          potential to revolutionize cryptography, materials science, and
+          artificial intelligence.
+        </p>
+        <h2>The Role of Data in Modern Technology</h2>
+        <p>
+          Data is often called the new oil. Organizations collect vast amounts
+          of data to gain insights, improve decision-making, and personalize
+          user experiences.
+        </p>
+        <h3>Big Data Technologies</h3>
+        <ul>
+          <li>Distributed databases</li>
+          <li>Real-time analytics</li>
+          <li>Data warehousing</li>
+          <li>Business intelligence tools</li>
+        </ul>
+        <p>
+          Ethical data usage and privacy regulations are becoming increasingly
+          important in a data-driven world.
+        </p>
+        <h2>9. The Future of Software Development</h2>
+        <p>
+          Software development is moving toward automation, low-code platforms,
+          and AI-assisted coding. Developers are focusing more on architecture,
+          scalability, and system optimization.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>Key future trends include:</p>
+        <ul>
+          <li>AI-powered development tools</li>
+          <li>Edge computing</li>
+          <li>5G connectivity</li>
+          <li>Augmented and Virtual Reality</li>
+        </ul>
+        <h2>Conclusion</h2>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          Technology continues to reshape our world at a rapid pace. From
+          artificial intelligence to quantum computing, each innovation brings
+          opportunities and challenges. Staying updated, learning continuously,
+          and adapting to change are essential for anyone involved in the tech
+          industry.
+        </p>
+        <img src="../assets/images/img1.jpg" alt="..." />
+        <p>
+          The future belongs to those who embrace innovation, prioritize
+          security, and build scalable solutions that enhance human life. As we
+          move forward, collaboration between developers, businesses, and
+          policymakers will determine how technology shapes the next generation.
+        </p>
+      </div>
+      <div class="col-span-1 sticky top-48 flex flex-col gap-8">
+        <h3
+          class="text-4xl capitalize font-secondary leading-none font-extrabold"
+        >
+          A free daily digest of the news that matters most.
+        </h3>
+        <form class="flex gap-1">
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            class="block w-full bg-background border border-text text-xs outline-0 font-medium p-3"
+          />
+          <button
+            type="submit"
+            class="bg-secondary text-xs font-semibold border-0 outline-0 px-6 dark:text-background hover:bg-primary transition duration-500"
+          >
+            Subscribe!
+          </button>
+        </form>
+        <div
+          class="bg-zinc-200 flex justify-center items-center h-56 text-black"
+        >
+          Ad.
+        </div>
+      </div>
+    </section>
+    <!-- Recommended Post -->
+    <section class="mb-20 mt-32 grid grid-cols-2 gap-6 items-center">
+      <div
+        class="flex flex-col gap-4 bg-secondary dark:text-background p-8 relative"
+      >
+        <p
+          class="absolute text-text top-0 left-5 -translate-y-2/3 text-5xl capitalize font-extrabold leading-tight font-secondary"
+        >
+          Recommended
+        </p>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
+            <p class="text-xs font-secondary">Feb-2026</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
+              Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
+            </h3>
+            <p class="text-sm leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="flex flex-col gap-6 sticky top-40">
+        <div
+          class="bg-zinc-200 flex justify-center items-center h-56 text-black"
+        >
+          Ad.
+        </div>
+        <div
+          class="bg-zinc-200 flex justify-center items-center h-56 text-black"
+        >
+          Ad.
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="flex justify-between items-start px-6 gap-6 font-secondary py-32"
+    >
+      <div class="flex gap-4 items-center text-2xl">
+        <a
+          href="#"
+          class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
+        >
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a
+          href="#"
+          class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="#"
+          class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
+        >
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+      <div class="flex flex-col gap-4 items-end max-w-xl">
+        <a href="./index.html" class="text-4xl font-bold uppercase w-fit"
+          >My Logo</a
+        >
+        <div
+          class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3"
+        >
+          <a href="./category.html" class="hover:underline">Entertainment</a>
+          <a href="./category.html" class="hover:underline">Tech</a>
+          <a href="./category.html" class="hover:underline">Automobile</a>
+          <a href="./category.html" class="hover:underline">Weather</a>
+          <a href="./category.html" class="hover:underline">Politics</a>
+          <a href="./category.html" class="hover:underline">Media</a>
+          <a href="#" class="hover:underline">Cookie Settings</a>
+          <a href="#" class="hover:underline">Terms of Use</a>
+          <a href="#" class="hover:underline">Privacy Notice</a>
+          <a href="#" class="hover:underline">Cookie Policy</a>
+          <a href="#" class="hover:underline">Licensing FAQ</a>
+          <a href="#" class="hover:underline">Accessibility</a>
+          <a href="#" class="hover:underline">Platform Status</a>
+        </div>
+        <p class="text-sm mt-20">© 2026 My Blogs. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -12,7 +12,10 @@
       rel="stylesheet"
     />
     <!-- Bootstrap Icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="../css/output.css" />
     <title>My Blog Website</title>
   </head>
@@ -22,46 +25,86 @@
       class="bg-background border-b border-text text-text flex flex-col items-center gap-6 font-secondary sticky z-50 top-0 w-full py-4"
     >
       <div class="flex justify-between items-center gap-6 w-full">
-        <button id="theme-btn" type="button" class="text-xs hover:text-primary transition duration-300">
-          <div class="flex items-center gap-1 dark:hidden">
-            <i class="bi bi-brightness-low text-xl"></i>
-            Dark
-          </div>
-          <div class="dark:flex items-center gap-1 hidden">
-            <i class="bi bi-brightness-high text-sm"></i>
-            Light
-          </div>
-        </button>
-        <a href="#" class="text-2xl font-bold uppercase w-fit">My Logo</a>
-        <div class="flex gap-1">
-          <input
-            type="email"
-            placeholder="Your Email"
-            required
-            class="block w-full bg-background border border-text text-xs outline-0 font-medium p-2"
-          />
+        <a href="./index.html" class="text-2xl font-bold uppercase w-fit"
+          >My Logo</a
+        >
+        <div class="flex gap-4 items-center justify-end">
+          <!-- Theme Button -->
           <button
-            type="submit"
-            class="bg-secondary text-xs font-semibold border-0 outline-0 p-2 dark:text-background hover:bg-primary transition duration-300"
+            id="theme-btn"
+            type="button"
+            class="text-xs hover:text-primary transition duration-300"
           >
-            Subscribe!
+            <div class="flex items-center gap-1 dark:hidden">
+              <i class="bi bi-brightness-low text-xl"></i>
+              Dark
+            </div>
+            <div class="dark:flex items-center gap-1 hidden">
+              <i class="bi bi-brightness-high text-sm"></i>
+              Light
+            </div>
           </button>
+          <!-- Newletter form -->
+          <div class="flex gap-1">
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              class="block w-full bg-background border border-text text-xs outline-0 font-medium p-2"
+            />
+            <button
+              type="submit"
+              class="bg-secondary text-xs font-semibold border-0 outline-0 p-2 dark:text-background hover:bg-primary transition duration-300"
+            >
+              Subscribe!
+            </button>
+          </div>
         </div>
       </div>
       <div class="flex justify-between items-center gap-6 w-full">
         <input
           type="search"
-          placeholder="Search any word"
+          placeholder="Search any topic"
           class="block w-full py-2.5 px-4 text-sm font-medium border border-text outline-0 max-w-sm"
         />
-        <div class="text-lg leading-none font-medium flex justify-end items-center gap-5">
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">Entertainment</a>
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">Tech</a>
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">Automobile</a>
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">Weather</a>
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">Politics</a>
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">Media</a>
-          <a href="#" class="hover:underline hover:text-primary transition duration-300">More</a>
+        <div
+          class="text-lg leading-none font-medium flex justify-end items-center gap-5"
+        >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Entertainment</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Tech</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Automobile</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Weather</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Politics</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >Media</a
+          >
+          <a
+            href="./category.html"
+            class="hover:underline hover:text-primary transition duration-300"
+            >More</a
+          >
           <button
             type="button"
             class="text-3xl leading-none border-0 outline-0 hover:text-primary transition duration-300"
@@ -74,11 +117,20 @@
     <!-- Hero section -->
     <main class="grid grid-cols-5 gap-6 mt-6 items-start">
       <div class="col-span-2 flex flex-col gap-4">
-        <h3 class="text-xl font-extrabold font-secondary bg-secondary dark:text-background p-6 border border-text">
+        <h3
+          class="text-xl font-extrabold font-secondary bg-secondary dark:text-background p-6 border border-text"
+        >
           Most Popular
         </h3>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -88,8 +140,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -99,8 +158,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -110,8 +176,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -121,8 +194,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -132,8 +212,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -143,8 +230,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -154,8 +248,15 @@
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
-          <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="w-44 h-auto block"
+          />
           <div class="flex flex-col gap-3">
             <h3
               class="text-lg font-medium font-secondary leading-tight capitalize underline group-hover:text-primary transition duration-300"
@@ -167,7 +268,7 @@
         </a>
       </div>
       <div class="col-span-3 sticky top-36">
-        <a href="#" class="flex flex-col gap-4 w-full group">
+        <a href="./blogdetail.html" class="flex flex-col gap-4 w-full group">
           <img src="../assets/images/img1.jpg" alt="..." class="block w-full" />
           <h2
             class="text-6xl font-secondary font-bold group-hover:underline text-primary group-hover:text-secondary transition duration-300 capitalize -mt-32 ps-6 relative z-10"
@@ -175,9 +276,10 @@
             Repellendus itaque voluptates cumque cupiditate! Nulla, aperiam.
           </h2>
           <p class="text-base font-normal leading-tight ps-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores sint illo deleniti officia
-            blanditiis necessitatibus, aut animi consequuntur beatae ullam consectetur dicta iure tempore eos repellat
-            omnis quibusdam cum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            asperiores sint illo deleniti officia blanditiis necessitatibus, aut
+            animi consequuntur beatae ullam consectetur dicta iure tempore eos
+            repellat omnis quibusdam cum.
           </p>
         </a>
       </div>
@@ -189,137 +291,219 @@
       >
         Facilis in aliquid nesciunt. Voluptatibus libero voluptas eaque!
       </h3>
-      <div class="col-span-2 flex flex-col gap-4 bg-secondary dark:text-background p-8 relative">
+      <div
+        class="col-span-2 flex flex-col gap-4 bg-secondary dark:text-background p-8 relative"
+      >
         <p
           class="absolute text-text top-0 left-5 -translate-y-2/3 text-5xl font-extrabold tracking-tighter leading-tight font-secondary"
         >
           Most Discussed
         </p>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
@@ -333,131 +517,211 @@
         >
           Just For You
         </p>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
-        <a href="#" class="flex gap-4 items-start w-full group border-b border-text pb-3">
+        <a
+          href="./blogdetail.html"
+          class="flex gap-4 items-start w-full group border-b border-text pb-3"
+        >
           <div class="flex flex-col gap-3 w-full">
-            <img src="../assets/images/img1.jpg" alt="..." class="w-44 h-auto block" />
+            <img
+              src="../assets/images/img1.jpg"
+              alt="..."
+              class="w-44 h-auto block"
+            />
             <p class="text-xs font-secondary">Feb-2026</p>
           </div>
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline">
+            <h3
+              class="text-lg font-medium font-secondary leading-tight capitalize group-hover:underline"
+            >
               Odit, in! Quae assumenda tenetur ipsam itaque magnam blanditiis...
             </h3>
             <p class="text-sm leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum eaque dolorem rerum tenetur, incidunt
-              harum ut quidem accusantium dolore maiores, nobis doloremque dolorum nam quisquam debitis nulla aliquam
-              natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              earum eaque dolorem rerum tenetur, incidunt harum ut quidem
+              accusantium dolore maiores, nobis doloremque dolorum nam quisquam
+              debitis nulla aliquam natus?
             </p>
           </div>
         </a>
@@ -472,117 +736,162 @@
     <section class="my-44 grid grid-cols-2 gap-8 items-start">
       <div class="flex items-start gap-8 sticky top-40">
         <div class="flex flex-col gap-4">
-          <h3 class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+          <h3
+            class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none"
+          >
             Tech
           </h3>
-          <a href="#" class="text-xs text-end font-medium underline capitalize">View All</a>
+          <a
+            href="./category.html"
+            class="text-xs text-end font-medium underline capitalize"
+            >View All</a
+          >
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="capitalize text-4xl font-extrabold leading-none font-secondary">
-            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
+          <h2
+            class="capitalize text-4xl font-extrabold leading-none font-secondary"
+          >
+            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque
+            dicta.
           </h2>
           <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error ut. Omnis id ut, fuga, vel ab
-            laudantium pariatur autem nisi voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            error ut. Omnis id ut, fuga, vel ab laudantium pariatur autem nisi
+            voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
           </p>
         </div>
       </div>
       <div class="flex flex-col gap-12 w-full">
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
@@ -592,117 +901,162 @@
     <section class="my-44 grid grid-cols-2 gap-8 items-start">
       <div class="flex items-start gap-8 sticky top-40">
         <div class="flex flex-col gap-4">
-          <h3 class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+          <h3
+            class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none"
+          >
             Automobile
           </h3>
-          <a href="#" class="text-xs text-end font-medium underline capitalize">View All</a>
+          <a
+            href="./category.html"
+            class="text-xs text-end font-medium underline capitalize"
+            >View All</a
+          >
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="capitalize text-4xl font-extrabold leading-none font-secondary">
-            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
+          <h2
+            class="capitalize text-4xl font-extrabold leading-none font-secondary"
+          >
+            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque
+            dicta.
           </h2>
           <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error ut. Omnis id ut, fuga, vel ab
-            laudantium pariatur autem nisi voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            error ut. Omnis id ut, fuga, vel ab laudantium pariatur autem nisi
+            voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
           </p>
         </div>
       </div>
       <div class="flex flex-col gap-12 w-full">
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
@@ -712,117 +1066,162 @@
     <section class="my-44 grid grid-cols-2 gap-8 items-start">
       <div class="flex items-start gap-8 sticky top-40">
         <div class="flex flex-col gap-4">
-          <h3 class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+          <h3
+            class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none"
+          >
             Entertainment
           </h3>
-          <a href="#" class="text-xs text-end font-medium underline capitalize">View All</a>
+          <a
+            href="./category.html"
+            class="text-xs text-end font-medium underline capitalize"
+            >View All</a
+          >
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="capitalize text-4xl font-extrabold leading-none font-secondary">
-            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
+          <h2
+            class="capitalize text-4xl font-extrabold leading-none font-secondary"
+          >
+            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque
+            dicta.
           </h2>
           <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error ut. Omnis id ut, fuga, vel ab
-            laudantium pariatur autem nisi voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            error ut. Omnis id ut, fuga, vel ab laudantium pariatur autem nisi
+            voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
           </p>
         </div>
       </div>
       <div class="flex flex-col gap-12 w-full">
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
@@ -832,117 +1231,162 @@
     <section class="my-44 grid grid-cols-2 gap-8 items-start">
       <div class="flex items-start gap-8 sticky top-40">
         <div class="flex flex-col gap-4">
-          <h3 class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+          <h3
+            class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none"
+          >
             Politics
           </h3>
-          <a href="#" class="text-xs text-end font-medium underline capitalize">View All</a>
+          <a
+            href="./category.html"
+            class="text-xs text-end font-medium underline capitalize"
+            >View All</a
+          >
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="capitalize text-4xl font-extrabold leading-none font-secondary">
-            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
+          <h2
+            class="capitalize text-4xl font-extrabold leading-none font-secondary"
+          >
+            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque
+            dicta.
           </h2>
           <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error ut. Omnis id ut, fuga, vel ab
-            laudantium pariatur autem nisi voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            error ut. Omnis id ut, fuga, vel ab laudantium pariatur autem nisi
+            voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
           </p>
         </div>
       </div>
       <div class="flex flex-col gap-12 w-full">
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
@@ -952,117 +1396,162 @@
     <section class="my-44 grid grid-cols-2 gap-8 items-start">
       <div class="flex items-start gap-8 sticky top-40">
         <div class="flex flex-col gap-4">
-          <h3 class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+          <h3
+            class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none"
+          >
             Science
           </h3>
-          <a href="#" class="text-xs text-end font-medium underline capitalize">View All</a>
+          <a
+            href="./category.html"
+            class="text-xs text-end font-medium underline capitalize"
+            >View All</a
+          >
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="capitalize text-4xl font-extrabold leading-none font-secondary">
-            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
+          <h2
+            class="capitalize text-4xl font-extrabold leading-none font-secondary"
+          >
+            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque
+            dicta.
           </h2>
           <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error ut. Omnis id ut, fuga, vel ab
-            laudantium pariatur autem nisi voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            error ut. Omnis id ut, fuga, vel ab laudantium pariatur autem nisi
+            voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
           </p>
         </div>
       </div>
       <div class="flex flex-col gap-12 w-full">
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
@@ -1072,124 +1561,171 @@
     <section class="mt-44 grid grid-cols-2 gap-8 items-start">
       <div class="flex items-start gap-8 sticky top-40">
         <div class="flex flex-col gap-4">
-          <h3 class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+          <h3
+            class="text-2xl font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none"
+          >
             Podcasts
           </h3>
-          <a href="#" class="text-xs text-end font-medium underline capitalize">View All</a>
+          <a
+            href="./category.html"
+            class="text-xs text-end font-medium underline capitalize"
+            >View All</a
+          >
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="capitalize text-4xl font-extrabold leading-none font-secondary">
-            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
+          <h2
+            class="capitalize text-4xl font-extrabold leading-none font-secondary"
+          >
+            animi non sit, pariatur omnis excepturi quisquam ipsa et eaque
+            dicta.
           </h2>
           <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error ut. Omnis id ut, fuga, vel ab
-            laudantium pariatur autem nisi voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            error ut. Omnis id ut, fuga, vel ab laudantium pariatur autem nisi
+            voluptatum, vitae in ratione quisquam hic dolorum commodi nam.
           </p>
         </div>
       </div>
       <div class="flex flex-col gap-12 w-full">
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
-        <a href="#" class="flex flex-col gap-4 group">
-          <img src="../assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img
+            src="../assets/images/img1.jpg"
+            alt="..."
+            class="block w-full aspect-square object-cover mx-auto"
+          />
           <h3
             class="capitalize text-4xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
           >
             "illo minima, adipisci dolor sequi enim expedita sint incidunt."
           </h3>
           <p class="text-sm leading-tight">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi nostrum atque deleniti vitae, fugit
-            illo explicabo! Vero delectus, veniam consequuntur necessitatibus obcaecati officia quibusdam velit, in
-            adipisci ratione nam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            animi nostrum atque deleniti vitae, fugit illo explicabo! Vero
+            delectus, veniam consequuntur necessitatibus obcaecati officia
+            quibusdam velit, in adipisci ratione nam.
           </p>
           <p class="text-xs font-secondary">Feb-2026</p>
         </a>
       </div>
     </section>
     <!-- Footer -->
-    <footer class="flex justify-between items-start px-6 gap-6 font-secondary py-32">
+    <footer
+      class="flex justify-between items-start px-6 gap-6 font-secondary py-32"
+    >
       <div class="flex gap-4 items-center text-2xl">
         <a
           href="#"
@@ -1211,14 +1747,18 @@
         </a>
       </div>
       <div class="flex flex-col gap-4 items-end max-w-xl">
-        <a href="#" class="text-4xl font-bold uppercase w-fit">My Logo</a>
-        <div class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3">
-          <a href="#" class="hover:underline">Entertainment</a>
-          <a href="#" class="hover:underline">Tech</a>
-          <a href="#" class="hover:underline">Automobile</a>
-          <a href="#" class="hover:underline">Weather</a>
-          <a href="#" class="hover:underline">Politics</a>
-          <a href="#" class="hover:underline">Media</a>
+        <a href="./index.html" class="text-4xl font-bold uppercase w-fit"
+          >My Logo</a
+        >
+        <div
+          class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3"
+        >
+          <a href="./category.html" class="hover:underline">Entertainment</a>
+          <a href="./category.html" class="hover:underline">Tech</a>
+          <a href="./category.html" class="hover:underline">Automobile</a>
+          <a href="./category.html" class="hover:underline">Weather</a>
+          <a href="./category.html" class="hover:underline">Politics</a>
+          <a href="./category.html" class="hover:underline">Media</a>
           <a href="#" class="hover:underline">Cookie Settings</a>
           <a href="#" class="hover:underline">Terms of Use</a>
           <a href="#" class="hover:underline">Privacy Notice</a>
