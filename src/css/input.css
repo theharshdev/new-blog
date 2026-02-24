@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: #29aaff;
+  --secondary: #f9e500;
+  --text: #112d4e;
+  --background: #f9f7f7;
+}
+
+.dark {
+  --primary: #29aaff;
+  --secondary: #bbdc00;
+  --text: #f9f7f7;
+  --background: #222831;
+}
+
+@theme {
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Hubot Sans", sans-serif;
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text: var(--text);
+  --color-background: var(--background);
+}
+
+button {
+  cursor: pointer;
+}
