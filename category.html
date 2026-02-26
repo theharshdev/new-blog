@@ -12,658 +12,583 @@
       rel="stylesheet"
     />
     <!-- Bootstrap Icon CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="./src/css/output.css" />
     <title>My Blog Website</title>
   </head>
-  <body class="bg-background font-primary text-text max-w-6xl mx-auto px-4">
-    <!-- navbar -->
-    <nav
-      class="bg-background border-b border-text text-text flex flex-col items-center gap-6 font-secondary sticky z-50 top-0 w-full py-4"
-    >
-      <div class="flex justify-between items-center gap-6 w-full">
-        <a href="./index.html" class="text-2xl font-bold uppercase w-fit"
-          >The Steam</a
-        >
-        <div class="flex gap-4 items-center justify-end">
-          <!-- Theme Button -->
-          <button
-            id="theme-btn"
-            type="button"
-            class="text-xs hover:text-primary transition duration-300"
+  <body class="bg-background font-primary text-text flex max-w-7xl mx-auto">
+    <!-- Add Container -->
+    <div class="w-full lg:flex flex-col gap-4 p-4 text-sm hidden">
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
+      </div>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
+      </div>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
+      </div>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
+      </div>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
+      </div>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
+      </div>
+    </div>
+    <!-- Main Container -->
+    <section class="max-w-4xl mx-auto lg:px-0 px-4 w-full shrink-0">
+      <!-- Ad. Container -->
+      <div class="h-44 w-full bg-zinc-300 dark:bg-slate-600 text-sm lg:flex hidden justify-center items-center">
+        Ad.
+      </div>
+      <!-- navbar -->
+      <nav
+        class="bg-background border-b border-text text-text flex flex-col items-center gap-6 font-secondary sticky z-50 top-0 w-full py-4"
+      >
+        <div class="flex justify-between items-center gap-6 w-full">
+          <a href="./index.html" class="text-2xl font-bold uppercase w-fit italic">The Steam</a>
+          <div class="flex gap-4 items-center justify-end">
+            <!-- Theme Button -->
+            <button id="theme-btn" type="button" class="text-xs hover:text-primary transition duration-300">
+              <div class="flex items-center gap-1 dark:hidden">
+                <i class="bi bi-brightness-low text-xl"></i>
+                Dark
+              </div>
+              <div class="dark:flex items-center gap-1 hidden">
+                <i class="bi bi-brightness-high text-sm"></i>
+                Light
+              </div>
+            </button>
+            <!-- Newletter form -->
+            <div class="flex gap-1">
+              <input
+                type="email"
+                placeholder="Your Email"
+                required
+                class="block w-full bg-background border border-text text-xs outline-0 font-medium p-2"
+              />
+              <button
+                type="submit"
+                class="bg-secondary text-xs font-semibold border-0 outline-0 p-2 dark:text-background hover:bg-primary transition duration-300"
+              >
+                Subscribe!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center gap-6 w-full">
+          <input
+            type="search"
+            placeholder="Search any topic"
+            class="block w-full py-2.5 px-4 text-sm font-medium border border-text outline-0 max-w-sm"
+          />
+          <div class="text-sm leading-none font-medium flex justify-end items-center gap-5">
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">
+              Entertainment
+            </a>
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Tech</a>
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Automobile</a>
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Weather</a>
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Politics</a>
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Media</a>
+            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">More</a>
+            <button
+              type="button"
+              class="text-3xl leading-none border-0 outline-0 hover:text-primary transition duration-300"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero section -->
+      <main class="mb-20">
+        <div class="bg-secondary h-[40dvh] mt-6"></div>
+        <h3 class="font-secondary text-5xl -translate-y-1/2 leading-none font-extrabold">Entertainment</h3>
+        <p class="text-sm font-secondary leading-tight max-w-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officia odit! Minus ipsum, est, iure, vitae
+          consequuntur molestias aliquam ea architecto voluptatem eum perspiciatis. Nemo distinctio autem nam dicta
+          perferendis!
+        </p>
+      </main>
+      <!-- Articles -->
+      <section class="mb-20 grid grid-cols-3 gap-6 border-b border-primary pb-5">
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img src="./src/assets/images/img1.jpg" alt="The Rise of AI Assistants in Development" class="block w-full" />
+          <div class="p-4 flex flex-col gap-4">
+            <h3
+              class="text-xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+            >
+              how ai coding assistants are reshaping frontend workflows
+            </h3>
+            <p class="text-xs paragraph">
+              From auto-generated components to intelligent refactoring suggestions, AI tools are becoming essential in
+              modern development environments. Understanding how to leverage them effectively can significantly boost
+              productivity.
+            </p>
+            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+          </div>
+        </a>
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img src="./src/assets/images/img1.jpg" alt="Design Systems for Scalable Apps" class="block w-full" />
+          <div class="p-4 flex flex-col gap-4">
+            <h3
+              class="text-xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+            >
+              building scalable design systems with utility-first css
+            </h3>
+            <p class="text-xs paragraph">
+              A well-structured design system improves consistency, speeds up collaboration, and reduces UI debt.
+              Utility-first frameworks make it easier to standardize spacing, typography, and color usage across large
+              applications.
+            </p>
+            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+          </div>
+        </a>
+        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+          <img src="./src/assets/images/img1.jpg" alt="Optimizing Web Performance" class="block w-full" />
+          <div class="p-4 flex flex-col gap-4">
+            <h3
+              class="text-xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+            >
+              practical strategies to improve core web vitals in 2026
+            </h3>
+            <p class="text-xs paragraph">
+              Performance remains a competitive advantage. Techniques like code splitting, lazy loading images, and
+              reducing JavaScript payload sizes can dramatically improve user experience and search rankings.
+            </p>
+            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+          </div>
+        </a>
+      </section>
+      <!-- Articles -->
+      <section class="grid grid-cols-3 gap-6 items-start mb-20">
+        <div class="col-span-2 flex flex-col gap-12">
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+            <img
+              src="./src/assets/images/img1.jpg"
+              alt="The Rise of AI Assistants in Development"
+              class="block w-full"
+            />
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+              >
+                how ai coding assistants are reshaping frontend workflows
+              </h3>
+              <p class="text-xs paragraph">
+                From auto-generated components to intelligent refactoring suggestions, AI tools are becoming essential
+                in modern development environments. Understanding how to leverage them effectively can significantly
+                boost productivity.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+            </div>
+          </a>
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+            <img src="./src/assets/images/img1.jpg" alt="Design Systems for Scalable Apps" class="block w-full" />
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+              >
+                building scalable design systems with utility-first css
+              </h3>
+              <p class="text-xs paragraph">
+                A well-structured design system improves consistency, speeds up collaboration, and reduces UI debt.
+                Utility-first frameworks make it easier to standardize spacing, typography, and color usage across large
+                applications.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+            </div>
+          </a>
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+            <img src="./src/assets/images/img1.jpg" alt="Optimizing Web Performance" class="block w-full" />
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+              >
+                practical strategies to improve core web vitals in 2026
+              </h3>
+              <p class="text-xs paragraph">
+                Performance remains a competitive advantage. Techniques like code splitting, lazy loading images, and
+                reducing JavaScript payload sizes can dramatically improve user experience and search rankings.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-span-1 sticky top-40 flex justify-center items-center h-44 bg-zinc-300 dark:bg-slate-600">
+          Ad.
+        </div>
+      </section>
+      <!-- Articles -->
+      <section class="grid grid-cols-3 gap-6 items-start mb-20">
+        <div class="col-span-2 flex flex-col gap-12">
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group hover:bg-primary transition duration-300">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                how ai coding assistants are reshaping frontend workflows
+              </h3>
+              <p class="text-xs paragraph">
+                From auto-generated components to intelligent refactoring suggestions, AI tools are becoming essential
+                in modern development environments. Understanding how to leverage them effectively can significantly
+                boost productivity.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+            </div>
+          </a>
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group hover:bg-primary transition duration-300">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                building scalable design systems with utility-first css
+              </h3>
+              <p class="text-xs paragraph">
+                A well-structured design system improves consistency, speeds up collaboration, and reduces UI debt.
+                Utility-first frameworks make it easier to standardize spacing, typography, and color usage across large
+                applications.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+            </div>
+          </a>
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group hover:bg-primary transition duration-300">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                practical strategies to improve core web vitals in 2026
+              </h3>
+              <p class="text-xs paragraph">
+                Performance remains a competitive advantage. Techniques like code splitting, lazy loading images, and
+                reducing JavaScript payload sizes can dramatically improve user experience and search rankings.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-span-1 sticky top-40 flex justify-center items-center h-44 bg-zinc-300 dark:bg-slate-600">
+          Ad.
+        </div>
+      </section>
+      <!-- Articles -->
+      <section class="grid grid-cols-3 gap-6 items-start mb-20">
+        <div class="col-span-2 flex flex-col gap-12">
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+            <img
+              src="./src/assets/images/img1.jpg"
+              alt="The Rise of AI Assistants in Development"
+              class="block w-full"
+            />
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+              >
+                how ai coding assistants are reshaping frontend workflows
+              </h3>
+              <p class="text-xs paragraph">
+                From auto-generated components to intelligent refactoring suggestions, AI tools are becoming essential
+                in modern development environments. Understanding how to leverage them effectively can significantly
+                boost productivity.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+            </div>
+          </a>
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+            <img src="./src/assets/images/img1.jpg" alt="Design Systems for Scalable Apps" class="block w-full" />
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+              >
+                building scalable design systems with utility-first css
+              </h3>
+              <p class="text-xs paragraph">
+                A well-structured design system improves consistency, speeds up collaboration, and reduces UI debt.
+                Utility-first frameworks make it easier to standardize spacing, typography, and color usage across large
+                applications.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+            </div>
+          </a>
+          <a href="./blogdetail.html" class="flex flex-col gap-4 group">
+            <img src="./src/assets/images/img1.jpg" alt="Optimizing Web Performance" class="block w-full" />
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
+              >
+                practical strategies to improve core web vitals in 2026
+              </h3>
+              <p class="text-xs paragraph">
+                Performance remains a competitive advantage. Techniques like code splitting, lazy loading images, and
+                reducing JavaScript payload sizes can dramatically improve user experience and search rankings.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-span-1 flex flex-col gap-4 sticky top-40 bg-primary p-6">
+          <p class="text-3xl font-extrabold leading-tight font-secondary absolute top-0 left-0 -translate-y-2/3">
+            Just For You
+          </p>
+          <a
+            href="./blogdetail.html"
+            class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
           >
-            <div class="flex items-center gap-1 dark:hidden">
-              <i class="bi bi-brightness-low text-xl"></i>
-              Dark
+            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+            <h3
+              class="text-xs font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300 paragraph"
+            >
+              why frontend developers should care about web accessibility in 2026
+            </h3>
+          </a>
+          <a
+            href="./blogdetail.html"
+            class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+          >
+            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+            <h3
+              class="text-xs font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300 paragraph"
+            >
+              mastering component reusability in modern react projects
+            </h3>
+          </a>
+          <a
+            href="./blogdetail.html"
+            class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+          >
+            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+            <h3
+              class="text-xs font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300 paragraph"
+            >
+              how to structure scalable css architecture for large applications
+            </h3>
+          </a>
+          <a
+            href="./blogdetail.html"
+            class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+          >
+            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+            <h3
+              class="text-xs font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300 paragraph"
+            >
+              understanding server components and the future of rendering
+            </h3>
+          </a>
+          <a
+            href="./blogdetail.html"
+            class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
+          >
+            <p class="text-xs font-secondary whitespace-nowrap">Nov-2025</p>
+            <h3
+              class="text-xs font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300 paragraph"
+            >
+              practical tips to improve lighthouse performance scores
+            </h3>
+          </a>
+        </div>
+      </section>
+      <!-- Articles -->
+      <section class="grid grid-cols-3 gap-6 items-start mb-20">
+        <div class="col-span-2 flex flex-col gap-12">
+          <a href="./blogdetail.html" class="flex gap-6 group">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                how ai coding assistants are reshaping frontend workflows
+              </h3>
+              <p class="text-xs paragraph">
+                From auto-generated components to intelligent refactoring suggestions, AI tools are becoming essential
+                in modern development environments. Understanding how to leverage them effectively can significantly
+                boost productivity.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
             </div>
-            <div class="dark:flex items-center gap-1 hidden">
-              <i class="bi bi-brightness-high text-sm"></i>
-              Light
+            <img
+              src="./src/assets/images/img1.jpg"
+              alt="The Rise of AI Assistants in Development"
+              class="block w-52 object-cover"
+            />
+          </a>
+          <a href="./blogdetail.html" class="flex gap-6 group">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                building scalable design systems with utility-first css
+              </h3>
+              <p class="text-xs paragraph">
+                A well-structured design system improves consistency, speeds up collaboration, and reduces UI debt.
+                Utility-first frameworks make it easier to standardize spacing, typography, and color usage across large
+                applications.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
             </div>
-          </button>
-          <!-- Newletter form -->
-          <div class="flex gap-1">
+            <img
+              src="./src/assets/images/img1.jpg"
+              alt="Design Systems for Scalable Apps"
+              class="block w-52 object-cover"
+            />
+          </a>
+          <a href="./blogdetail.html" class="flex gap-6 group">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                practical strategies to improve core web vitals in 2026
+              </h3>
+              <p class="text-xs paragraph">
+                Performance remains a competitive advantage. Techniques like code splitting, lazy loading images, and
+                reducing JavaScript payload sizes can dramatically improve user experience and search rankings.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+            </div>
+            <img src="./src/assets/images/img1.jpg" alt="Optimizing Web Performance" class="block w-52 object-cover" />
+          </a>
+          <a href="./blogdetail.html" class="flex gap-6 group">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                how ai coding assistants are reshaping frontend workflows
+              </h3>
+              <p class="text-xs paragraph">
+                From auto-generated components to intelligent refactoring suggestions, AI tools are becoming essential
+                in modern development environments. Understanding how to leverage them effectively can significantly
+                boost productivity.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
+            </div>
+            <img
+              src="./src/assets/images/img1.jpg"
+              alt="The Rise of AI Assistants in Development"
+              class="block w-52 object-cover"
+            />
+          </a>
+          <a href="./blogdetail.html" class="flex gap-6 group">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                building scalable design systems with utility-first css
+              </h3>
+              <p class="text-xs paragraph">
+                A well-structured design system improves consistency, speeds up collaboration, and reduces UI debt.
+                Utility-first frameworks make it easier to standardize spacing, typography, and color usage across large
+                applications.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
+            </div>
+            <img
+              src="./src/assets/images/img1.jpg"
+              alt="Design Systems for Scalable Apps"
+              class="block w-52 object-cover"
+            />
+          </a>
+          <a href="./blogdetail.html" class="flex gap-6 group">
+            <div class="p-4 flex flex-col gap-4">
+              <h3
+                class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
+              >
+                practical strategies to improve core web vitals in 2026
+              </h3>
+              <p class="text-xs paragraph">
+                Performance remains a competitive advantage. Techniques like code splitting, lazy loading images, and
+                reducing JavaScript payload sizes can dramatically improve user experience and search rankings.
+              </p>
+              <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
+            </div>
+            <img src="./src/assets/images/img1.jpg" alt="Optimizing Web Performance" class="block w-52 object-cover" />
+          </a>
+        </div>
+        <div class="col-span-1 sticky top-40 flex flex-col gap-8">
+          <h3 class="text-2xl capitalize font-secondary leading-none font-extrabold">
+            A free daily digest of the news that matters most.
+          </h3>
+          <form class="flex gap-1">
             <input
               type="email"
               placeholder="Your Email"
               required
-              class="block w-full bg-background border border-text text-xs outline-0 font-medium p-2"
+              class="block w-full bg-background border border-text text-xs outline-0 font-medium p-3"
             />
             <button
               type="submit"
-              class="bg-secondary text-xs font-semibold border-0 outline-0 p-2 dark:text-background hover:bg-primary transition duration-300"
+              class="bg-secondary text-xs font-semibold border-0 outline-0 px-6 dark:text-background hover:bg-primary transition duration-500"
             >
               Subscribe!
             </button>
+          </form>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="flex justify-between items-start px-6 gap-6 font-secondary py-32">
+        <div class="flex gap-4 items-center text-2xl">
+          <a
+            href="./blogdetail.html"
+            class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="./blogdetail.html"
+            class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="./blogdetail.html"
+            class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
+          >
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+        <div class="flex flex-col gap-4 items-end max-w-xl">
+          <a href="./index.html" class="text-4xl font-bold uppercase w-fit italic">The Steam</a>
+          <div class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3">
+            <a href="./category.html" class="hover:underline">Entertainment</a>
+            <a href="./category.html" class="hover:underline">Tech</a>
+            <a href="./category.html" class="hover:underline">Automobile</a>
+            <a href="./category.html" class="hover:underline">Weather</a>
+            <a href="./category.html" class="hover:underline">Politics</a>
+            <a href="./category.html" class="hover:underline">Media</a>
+            <a href="#" class="hover:underline">Cookie Settings</a>
+            <a href="#" class="hover:underline">Terms of Use</a>
+            <a href="#" class="hover:underline">Privacy Notice</a>
+            <a href="#" class="hover:underline">Cookie Policy</a>
+            <a href="#" class="hover:underline">Licensing FAQ</a>
+            <a href="#" class="hover:underline">Accessibility</a>
+            <a href="#" class="hover:underline">Platform Status</a>
           </div>
+          <p class="text-sm mt-20">© 2026 The Steam. All Rights Reserved</p>
         </div>
-      </div>
-      <div class="flex justify-between items-center gap-6 w-full">
-        <input
-          type="search"
-          placeholder="Search any topic"
-          class="block w-full py-2.5 px-4 text-sm font-medium border border-text outline-0 max-w-sm"
-        />
-        <div
-          class="text-lg leading-none font-medium flex justify-end items-center gap-5"
-        >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >Entertainment</a
-          >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >Tech</a
-          >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >Automobile</a
-          >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >Weather</a
-          >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >Politics</a
-          >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >Media</a
-          >
-          <a
-            href="./category.html"
-            class="hover:underline hover:text-primary transition duration-300"
-            >More</a
-          >
-          <button
-            type="button"
-            class="text-3xl leading-none border-0 outline-0 hover:text-primary transition duration-300"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <!-- Hero section -->
-    <main class="mb-20">
-      <div class="bg-secondary h-[40dvh] mt-6"></div>
-      <h3
-        class="font-secondary text-8xl -translate-y-1/2 leading-none font-extrabold"
-      >
-        Entertainment
-      </h3>
-      <p class="text-xl font-secondary leading-tight max-w-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officia
-        odit! Minus ipsum, est, iure, vitae consequuntur molestias aliquam ea
-        architecto voluptatem eum perspiciatis. Nemo distinctio autem nam dicta
-        perferendis!
-      </p>
-    </main>
-    <!-- Articles -->
-    <section class="mb-20 grid grid-cols-3 gap-6 border-b border-primary pb-5">
-      <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-        <img
-          src="./src/assets/images/img1.jpg"
-          alt="The Rise of AI Assistants in Development"
-          class="block w-full"
-        />
-        <div class="p-4 flex flex-col gap-4">
-          <h3
-            class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-          >
-            how ai coding assistants are reshaping frontend workflows
-          </h3>
-          <p class="text-sm">
-            From auto-generated components to intelligent refactoring
-            suggestions, AI tools are becoming essential in modern development
-            environments. Understanding how to leverage them effectively can
-            significantly boost productivity.
-          </p>
-          <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-        </div>
-      </a>
-      <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-        <img
-          src="./src/assets/images/img1.jpg"
-          alt="Design Systems for Scalable Apps"
-          class="block w-full"
-        />
-        <div class="p-4 flex flex-col gap-4">
-          <h3
-            class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-          >
-            building scalable design systems with utility-first css
-          </h3>
-          <p class="text-sm">
-            A well-structured design system improves consistency, speeds up
-            collaboration, and reduces UI debt. Utility-first frameworks make it
-            easier to standardize spacing, typography, and color usage across
-            large applications.
-          </p>
-          <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-        </div>
-      </a>
-      <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-        <img
-          src="./src/assets/images/img1.jpg"
-          alt="Optimizing Web Performance"
-          class="block w-full"
-        />
-        <div class="p-4 flex flex-col gap-4">
-          <h3
-            class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-          >
-            practical strategies to improve core web vitals in 2026
-          </h3>
-          <p class="text-sm">
-            Performance remains a competitive advantage. Techniques like code
-            splitting, lazy loading images, and reducing JavaScript payload
-            sizes can dramatically improve user experience and search rankings.
-          </p>
-          <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-        </div>
-      </a>
+      </footer>
     </section>
-    <!-- Articles -->
-    <section class="grid grid-cols-3 gap-6 items-start mb-20">
-      <div class="col-span-2 flex flex-col gap-12">
-        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="The Rise of AI Assistants in Development"
-            class="block w-full"
-          />
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-6xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-            >
-              how ai coding assistants are reshaping frontend workflows
-            </h3>
-            <p class="text-sm">
-              From auto-generated components to intelligent refactoring
-              suggestions, AI tools are becoming essential in modern development
-              environments. Understanding how to leverage them effectively can
-              significantly boost productivity.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-          </div>
-        </a>
-        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Design Systems for Scalable Apps"
-            class="block w-full"
-          />
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-6xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-            >
-              building scalable design systems with utility-first css
-            </h3>
-            <p class="text-sm">
-              A well-structured design system improves consistency, speeds up
-              collaboration, and reduces UI debt. Utility-first frameworks make
-              it easier to standardize spacing, typography, and color usage
-              across large applications.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          </div>
-        </a>
-        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Optimizing Web Performance"
-            class="block w-full"
-          />
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-6xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-            >
-              practical strategies to improve core web vitals in 2026
-            </h3>
-            <p class="text-sm">
-              Performance remains a competitive advantage. Techniques like code
-              splitting, lazy loading images, and reducing JavaScript payload
-              sizes can dramatically improve user experience and search
-              rankings.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-          </div>
-        </a>
+    <!-- Add Container -->
+    <div class="w-full lg:flex flex-col gap-4 p-4 text-sm hidden">
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
       </div>
-      <div
-        class="col-span-1 sticky top-40 flex justify-center items-center h-44 bg-zinc-300 text-black"
-      >
-        Ad.
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
       </div>
-    </section>
-    <!-- Articles -->
-    <section class="grid grid-cols-3 gap-6 items-start mb-20">
-      <div class="col-span-2 flex flex-col gap-12">
-        <a
-          href="./blogdetail.html"
-          class="flex flex-col gap-4 group hover:bg-primary transition duration-300"
-        >
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-4xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              how ai coding assistants are reshaping frontend workflows
-            </h3>
-            <p class="text-sm">
-              From auto-generated components to intelligent refactoring
-              suggestions, AI tools are becoming essential in modern development
-              environments. Understanding how to leverage them effectively can
-              significantly boost productivity.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-          </div>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex flex-col gap-4 group hover:bg-primary transition duration-300"
-        >
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-4xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              building scalable design systems with utility-first css
-            </h3>
-            <p class="text-sm">
-              A well-structured design system improves consistency, speeds up
-              collaboration, and reduces UI debt. Utility-first frameworks make
-              it easier to standardize spacing, typography, and color usage
-              across large applications.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          </div>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex flex-col gap-4 group hover:bg-primary transition duration-300"
-        >
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-4xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              practical strategies to improve core web vitals in 2026
-            </h3>
-            <p class="text-sm">
-              Performance remains a competitive advantage. Techniques like code
-              splitting, lazy loading images, and reducing JavaScript payload
-              sizes can dramatically improve user experience and search
-              rankings.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-          </div>
-        </a>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
       </div>
-      <div
-        class="col-span-1 sticky top-40 flex justify-center items-center h-44 bg-zinc-300 text-black"
-      >
-        Ad.
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
       </div>
-    </section>
-    <!-- Articles -->
-    <section class="grid grid-cols-3 gap-6 items-start mb-20">
-      <div class="col-span-2 flex flex-col gap-12">
-        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="The Rise of AI Assistants in Development"
-            class="block w-full"
-          />
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-6xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-            >
-              how ai coding assistants are reshaping frontend workflows
-            </h3>
-            <p class="text-sm">
-              From auto-generated components to intelligent refactoring
-              suggestions, AI tools are becoming essential in modern development
-              environments. Understanding how to leverage them effectively can
-              significantly boost productivity.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-          </div>
-        </a>
-        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Design Systems for Scalable Apps"
-            class="block w-full"
-          />
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-6xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-            >
-              building scalable design systems with utility-first css
-            </h3>
-            <p class="text-sm">
-              A well-structured design system improves consistency, speeds up
-              collaboration, and reduces UI debt. Utility-first frameworks make
-              it easier to standardize spacing, typography, and color usage
-              across large applications.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          </div>
-        </a>
-        <a href="./blogdetail.html" class="flex flex-col gap-4 group">
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Optimizing Web Performance"
-            class="block w-full"
-          />
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-6xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary -mt-20 font-extrabold capitalize leading-none"
-            >
-              practical strategies to improve core web vitals in 2026
-            </h3>
-            <p class="text-sm">
-              Performance remains a competitive advantage. Techniques like code
-              splitting, lazy loading images, and reducing JavaScript payload
-              sizes can dramatically improve user experience and search
-              rankings.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-          </div>
-        </a>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
       </div>
-      <div class="col-span-1 flex flex-col gap-4 sticky top-48 bg-primary p-8">
-        <p
-          class="text-5xl font-extrabold leading-tight font-secondary absolute top-0 left-0 -translate-y-2/3"
-        >
-          Just For You
-        </p>
-        <a
-          href="./blogdetail.html"
-          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
-        >
-          <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-          <h3
-            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
-          >
-            why frontend developers should care about web accessibility in 2026
-          </h3>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
-        >
-          <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          <h3
-            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
-          >
-            mastering component reusability in modern react projects
-          </h3>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
-        >
-          <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          <h3
-            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
-          >
-            how to structure scalable css architecture for large applications
-          </h3>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
-        >
-          <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-          <h3
-            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
-          >
-            understanding server components and the future of rendering
-          </h3>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex gap-4 items-start w-full group border-b border-text pb-3 relative z-10"
-        >
-          <p class="text-xs font-secondary whitespace-nowrap">Nov-2025</p>
-          <h3
-            class="text-sm font-medium font-secondary leading-tight capitalize group-hover:underline group-hover:text-secondary transition duration-300"
-          >
-            practical tips to improve lighthouse performance scores
-          </h3>
-        </a>
+      <div class="h-dvh w-full flex items-center">
+        <div class="bg-zinc-300 dark:bg-slate-600 min-h-[50dvh] w-full flex justify-center items-center">Ad.</div>
       </div>
-    </section>
-    <!-- Articles -->
-    <section class="grid grid-cols-3 gap-6 items-start mb-20">
-      <div class="col-span-2 flex flex-col gap-12">
-        <a href="./blogdetail.html" class="flex gap-6 group">
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              how ai coding assistants are reshaping frontend workflows
-            </h3>
-            <p class="text-sm">
-              From auto-generated components to intelligent refactoring
-              suggestions, AI tools are becoming essential in modern development
-              environments. Understanding how to leverage them effectively can
-              significantly boost productivity.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-          </div>
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="The Rise of AI Assistants in Development"
-            class="block w-52 object-cover"
-          />
-        </a>
-        <a href="./blogdetail.html" class="flex gap-6 group">
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              building scalable design systems with utility-first css
-            </h3>
-            <p class="text-sm">
-              A well-structured design system improves consistency, speeds up
-              collaboration, and reduces UI debt. Utility-first frameworks make
-              it easier to standardize spacing, typography, and color usage
-              across large applications.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          </div>
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Design Systems for Scalable Apps"
-            class="block w-52 object-cover"
-          />
-        </a>
-        <a href="./blogdetail.html" class="flex gap-6 group">
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              practical strategies to improve core web vitals in 2026
-            </h3>
-            <p class="text-sm">
-              Performance remains a competitive advantage. Techniques like code
-              splitting, lazy loading images, and reducing JavaScript payload
-              sizes can dramatically improve user experience and search
-              rankings.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-          </div>
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Optimizing Web Performance"
-            class="block w-52 object-cover"
-          />
-        </a>
-        <a href="./blogdetail.html" class="flex gap-6 group">
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              how ai coding assistants are reshaping frontend workflows
-            </h3>
-            <p class="text-sm">
-              From auto-generated components to intelligent refactoring
-              suggestions, AI tools are becoming essential in modern development
-              environments. Understanding how to leverage them effectively can
-              significantly boost productivity.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Feb-2026</p>
-          </div>
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="The Rise of AI Assistants in Development"
-            class="block w-52 object-cover"
-          />
-        </a>
-        <a href="./blogdetail.html" class="flex gap-6 group">
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              building scalable design systems with utility-first css
-            </h3>
-            <p class="text-sm">
-              A well-structured design system improves consistency, speeds up
-              collaboration, and reduces UI debt. Utility-first frameworks make
-              it easier to standardize spacing, typography, and color usage
-              across large applications.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Jan-2026</p>
-          </div>
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Design Systems for Scalable Apps"
-            class="block w-52 object-cover"
-          />
-        </a>
-        <a href="./blogdetail.html" class="flex gap-6 group">
-          <div class="p-4 flex flex-col gap-4">
-            <h3
-              class="text-2xl group-hover:text-secondary transition duration-300 underline text-primary font-secondary font-extrabold capitalize leading-none"
-            >
-              practical strategies to improve core web vitals in 2026
-            </h3>
-            <p class="text-sm">
-              Performance remains a competitive advantage. Techniques like code
-              splitting, lazy loading images, and reducing JavaScript payload
-              sizes can dramatically improve user experience and search
-              rankings.
-            </p>
-            <p class="text-xs font-secondary whitespace-nowrap">Dec-2025</p>
-          </div>
-          <img
-            src="./src/assets/images/img1.jpg"
-            alt="Optimizing Web Performance"
-            class="block w-52 object-cover"
-          />
-        </a>
-      </div>
-      <div class="col-span-1 sticky top-48 flex flex-col gap-8">
-        <h3
-          class="text-4xl capitalize font-secondary leading-none font-extrabold"
-        >
-          A free daily digest of the news that matters most.
-        </h3>
-        <form class="flex gap-1">
-          <input
-            type="email"
-            placeholder="Your Email"
-            required
-            class="block w-full bg-background border border-text text-xs outline-0 font-medium p-3"
-          />
-          <button
-            type="submit"
-            class="bg-secondary text-xs font-semibold border-0 outline-0 px-6 dark:text-background hover:bg-primary transition duration-500"
-          >
-            Subscribe!
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer
-      class="flex justify-between items-start px-6 gap-6 font-secondary py-32"
-    >
-      <div class="flex gap-4 items-center text-2xl">
-        <a
-          href="./blogdetail.html"
-          class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
-        >
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
-        >
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a
-          href="./blogdetail.html"
-          class="flex justify-center items-center hover:bg-secondary transition duration-300 border border-text p-2 aspect-square w-14 h-14"
-        >
-          <i class="bi bi-twitter"></i>
-        </a>
-      </div>
-      <div class="flex flex-col gap-4 items-end max-w-xl">
-        <a href="./index.html" class="text-4xl font-bold uppercase w-fit"
-          >The Steam</a
-        >
-        <div
-          class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3"
-        >
-          <a href="./category.html" class="hover:underline">Entertainment</a>
-          <a href="./category.html" class="hover:underline">Tech</a>
-          <a href="./category.html" class="hover:underline">Automobile</a>
-          <a href="./category.html" class="hover:underline">Weather</a>
-          <a href="./category.html" class="hover:underline">Politics</a>
-          <a href="./category.html" class="hover:underline">Media</a>
-          <a href="#" class="hover:underline">Cookie Settings</a>
-          <a href="#" class="hover:underline">Terms of Use</a>
-          <a href="#" class="hover:underline">Privacy Notice</a>
-          <a href="#" class="hover:underline">Cookie Policy</a>
-          <a href="#" class="hover:underline">Licensing FAQ</a>
-          <a href="#" class="hover:underline">Accessibility</a>
-          <a href="#" class="hover:underline">Platform Status</a>
-        </div>
-        <p class="text-sm mt-20">© 2026 The Steam. All Rights Reserved</p>
-      </div>
-    </footer>
+    </div>
     <script src="./src/js/script.js"></script>
   </body>
 </html>
