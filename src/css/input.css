@@ -76,6 +76,39 @@ button {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .blog-content {
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 12px 0 4px 0;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    ul {
+      font-size: 14px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
 ::selection {
   background-color: var(--secondary);
   color: var(--background);

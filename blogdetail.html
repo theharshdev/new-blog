@@ -40,13 +40,46 @@
     </div>
     <!-- Main Container -->
     <section class="max-w-4xl mx-auto lg:px-0 px-4 w-full shrink-0">
+      <!-- Menu -->
+      <div
+        id="menu-box"
+        class="bg-secondary translate-x-full p-10 fixed top-0 right-0 sm:max-w-sm w-full h-dvh font-secondary lg:text-3xl text-2xl font-extrabold z-99 flex transition duration-500 flex-col gap-4 items-start text-zinc-800 overflow-auto border-l border-text"
+      >
+        <div class="flex justify-end w-full mb-8">
+          <button id="menu-close-btn" type="button" class="text-sm font-normal text-zinc-800 hover:underline">
+            Close
+          </button>
+        </div>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Tech</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Automobile</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Weather</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Politics</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Media</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Policy</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">UI/UX</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Reviews</a>
+        <div class="flex gap-1 w-full">
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            class="block h-12 w-full bg-secondary border text-black border-zinc-800 text-xs outline-0 font-medium p-2"
+          />
+          <button
+            type="submit"
+            class="bg-zinc-800 text-white text-xs font-semibold border-0 outline-0 py-2 px-5 hover:bg-primary transition duration-300"
+          >
+            Subscribe!
+          </button>
+        </div>
+      </div>
       <!-- Ad. Container -->
       <div class="h-44 w-full bg-zinc-300 dark:bg-slate-600 text-sm lg:flex hidden justify-center items-center">
         Ad.
       </div>
       <!-- navbar -->
       <nav
-        class="bg-background border-b border-text text-text flex flex-col items-center gap-6 font-secondary sticky z-50 top-0 w-full py-4"
+        class="bg-background border-b border-text text-text flex flex-col items-center lg:gap-6 gap-2 font-secondary sticky z-50 top-0 w-full py-4"
       >
         <div class="flex justify-between items-center gap-6 w-full">
           <a href="./index.html" class="text-2xl font-bold uppercase w-fit italic">The Steam</a>
@@ -63,7 +96,7 @@
               </div>
             </button>
             <!-- Newletter form -->
-            <div class="flex gap-1">
+            <div class="lg:flex hidden gap-1">
               <input
                 type="email"
                 placeholder="Your Email"
@@ -83,19 +116,48 @@
           <input
             type="search"
             placeholder="Search any topic"
-            class="block w-full py-2.5 px-4 text-sm font-medium border border-text outline-0 max-w-sm"
+            class="block w-full py-2.5 px-4 lg:text-sm text-xs font-medium border border-text outline-0 max-w-sm"
           />
           <div class="text-sm leading-none font-medium flex justify-end items-center gap-5">
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
               Entertainment
             </a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Tech</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Automobile</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Weather</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Politics</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Media</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">More</a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Tech
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Automobile
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Weather
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Politics
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Media
+            </a>
+
             <button
+              id="menu-open-btn"
               type="button"
               class="text-3xl leading-none border-0 outline-0 hover:text-primary transition duration-300"
             >
@@ -108,10 +170,10 @@
       <main class="mb-20 flex flex-col gap-8">
         <div class="bg-secondary h-[40dvh] mt-6"></div>
         <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full max-w-2xl -mt-20 pl-8" />
-        <h1 class="font-secondary text-3xl text-secondary leading-none font-extrabold max-w-md mx-auto">
+        <h1 class="font-secondary lg:text-3xl text-2xl text-secondary leading-none font-extrabold max-w-md mx-auto">
           The Future of Technology: A Deep Dive into Modern Innovations
         </h1>
-        <p class="text-lg font-secondary leading-tight max-w-2xl">
+        <p class="lg:text-lg text-sm font-secondary leading-tight max-w-2xl">
           Technology is evolving at an unprecedented pace. From artificial intelligence to quantum computing, modern
           innovations are reshaping industries, economies, and everyday life. In this comprehensive blog, we explore the
           major technological trends, their impact on society, and what the future holds for developers, businesses, and
@@ -119,8 +181,8 @@
         </p>
       </main>
       <!-- article part 1 -->
-      <section class="grid grid-cols-3 gap-6 items-start">
-        <div class="flex flex-col gap-8 col-span-2 leading-tight blog-content">
+      <section class="grid grid-cols-3 md:gap-6 gap-20 items-start">
+        <div class="flex flex-col gap-8 md:col-span-2 col-span-3 leading-tight blog-content">
           <h2>Artificial Intelligence and Machine Learning</h2>
           <p>
             Artificial Intelligence (AI) has moved beyond research labs and into real-world applications. Machine
@@ -289,7 +351,7 @@
             determine how technology shapes the next generation.
           </p>
         </div>
-        <div class="col-span-1 flex flex-col gap-4 sticky top-40 bg-primary p-6">
+        <div class="md:col-span-1 col-span-3 flex flex-col gap-4 sticky top-40 bg-primary p-6">
           <p class="text-3xl font-extrabold leading-tight font-secondary absolute top-0 left-0 -translate-y-2/3">
             Just For You
           </p>
@@ -351,8 +413,8 @@
         </div>
       </section>
       <!-- article part 2 -->
-      <section class="grid grid-cols-3 gap-6 items-start my-12">
-        <div class="flex flex-col gap-8 col-span-2 leading-tight blog-content">
+      <section class="grid grid-cols-3 md:gap-6 gap-20 items-start my-12">
+        <div class="flex flex-col gap-8 md:col-span-2 col-span-3 leading-tight blog-content">
           <h2>Artificial Intelligence and Machine Learning</h2>
           <p>
             Artificial Intelligence (AI) has moved beyond research labs and into real-world applications. Machine
@@ -521,7 +583,7 @@
             determine how technology shapes the next generation.
           </p>
         </div>
-        <div class="col-span-1 sticky top-40 flex flex-col gap-8">
+        <div class="md:col-span-1 col-span-3 sticky top-40 flex flex-col gap-8">
           <h3 class="text-2xl capitalize font-secondary leading-none font-extrabold">
             A free daily digest of the news that matters most.
           </h3>
@@ -543,10 +605,10 @@
         </div>
       </section>
       <!-- Recommended Post -->
-      <section class="mb-20 mt-32 grid grid-cols-2 gap-6 items-center">
+      <section class="mb-20 mt-32 grid md:grid-cols-2 gap-6 items-center">
         <div class="flex flex-col gap-4 bg-secondary dark:text-background p-8 relative">
           <p
-            class="absolute text-text top-0 left-5 -translate-y-2/3 text-3xl capitalize font-extrabold leading-tight font-secondary"
+            class="absolute text-text top-0 left-5 -translate-y-2/3 lg:text-3xl text-2xl capitalize font-extrabold leading-tight font-secondary"
           >
             Recommended
           </p>
@@ -685,7 +747,9 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="flex justify-between items-start px-6 gap-6 font-secondary py-32">
+      <footer
+        class="flex lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start px-6 gap-6 font-secondary lg:py-32 py-20"
+      >
         <div class="flex gap-4 items-center text-2xl">
           <a
             href="#"
@@ -706,9 +770,9 @@
             <i class="bi bi-twitter"></i>
           </a>
         </div>
-        <div class="flex flex-col gap-4 items-end max-w-xl">
+        <div class="flex flex-col gap-4 lg:items-end items-center max-w-xl">
           <a href="./index.html" class="text-4xl font-bold uppercase w-fit italic">The Steam</a>
-          <div class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3">
+          <div class="lg:text-sm text-xs leading-none font-medium flex lg:justify-end justify-center flex-wrap gap-3">
             <a href="./category.html" class="hover:underline">Entertainment</a>
             <a href="./category.html" class="hover:underline">Tech</a>
             <a href="./category.html" class="hover:underline">Automobile</a>

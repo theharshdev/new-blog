@@ -40,13 +40,46 @@
     </div>
     <!-- Main Container -->
     <section class="max-w-4xl mx-auto lg:px-0 px-4 w-full shrink-0">
+      <!-- Menu -->
+      <div
+        id="menu-box"
+        class="bg-secondary translate-x-full p-10 fixed top-0 right-0 sm:max-w-sm w-full h-dvh font-secondary lg:text-3xl text-2xl font-extrabold z-99 flex flex-col transition duration-500 gap-4 items-start text-zinc-800 overflow-auto border-l border-text"
+      >
+        <div class="flex justify-end w-full mb-8">
+          <button id="menu-close-btn" type="button" class="text-sm font-normal text-zinc-800 hover:underline">
+            Close
+          </button>
+        </div>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Tech</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Automobile</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Weather</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Politics</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Media</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Policy</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">UI/UX</a>
+        <a href="./category.html" class="hover:underline decoration-1 underline-offset-4">Reviews</a>
+        <div class="flex gap-1 w-full">
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            class="block h-12 w-full bg-secondary border text-black border-zinc-800 text-xs outline-0 font-medium p-2"
+          />
+          <button
+            type="submit"
+            class="bg-zinc-800 text-white text-xs font-semibold border-0 outline-0 py-2 px-5 hover:bg-primary transition duration-300"
+          >
+            Subscribe!
+          </button>
+        </div>
+      </div>
       <!-- Ad. Container -->
       <div class="h-44 w-full bg-zinc-300 dark:bg-slate-600 text-sm lg:flex hidden justify-center items-center">
         Ad.
       </div>
       <!-- navbar -->
       <nav
-        class="bg-background border-b border-text text-text flex flex-col items-center gap-6 font-secondary sticky z-50 top-0 w-full py-4"
+        class="bg-background border-b border-text text-text flex flex-col items-center lg:gap-6 gap-2 font-secondary sticky z-50 top-0 w-full py-4"
       >
         <div class="flex justify-between items-center gap-6 w-full">
           <a href="./index.html" class="text-2xl font-bold uppercase w-fit italic">The Steam</a>
@@ -63,7 +96,7 @@
               </div>
             </button>
             <!-- Newletter form -->
-            <div class="flex gap-1">
+            <div class="lg:flex hidden gap-1">
               <input
                 type="email"
                 placeholder="Your Email"
@@ -83,19 +116,48 @@
           <input
             type="search"
             placeholder="Search any topic"
-            class="block w-full py-2.5 px-4 text-sm font-medium border border-text outline-0 max-w-sm"
+            class="block w-full py-2.5 px-4 lg:text-sm text-xs font-medium border border-text outline-0 max-w-sm"
           />
           <div class="text-sm leading-none font-medium flex justify-end items-center gap-5">
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
               Entertainment
             </a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Tech</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Automobile</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Weather</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Politics</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">Media</a>
-            <a href="./category.html" class="hover:underline hover:text-primary transition duration-300">More</a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Tech
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Automobile
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Weather
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Politics
+            </a>
+            <a
+              href="./category.html"
+              class="hover:underline hover:text-primary transition lg:block hidden duration-300"
+            >
+              Media
+            </a>
+
             <button
+              id="menu-open-btn"
               type="button"
               class="text-3xl leading-none border-0 outline-0 hover:text-primary transition duration-300"
             >
@@ -106,7 +168,7 @@
       </nav>
       <!-- Hero section -->
       <main class="grid grid-cols-5 gap-6 mt-6 items-start">
-        <div class="col-span-2 flex flex-col gap-4">
+        <div class="lg:col-span-2 col-span-5 flex flex-col gap-4 lg:order-1 order-2">
           <h3 class="text-sm font-extrabold font-secondary bg-secondary dark:text-background p-6 border border-text">
             Most Popular
           </h3>
@@ -199,11 +261,11 @@
             </div>
           </a>
         </div>
-        <div class="col-span-3 sticky top-36">
+        <div class="lg:col-span-3 col-span-5 lg:sticky top-36 lg:order-2 order-1">
           <a href="./blogdetail.html" class="flex flex-col gap-4 w-full group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full" />
             <h2
-              class="text-4xl font-secondary font-bold group-hover:underline text-primary group-hover:text-secondary transition duration-300 capitalize -mt-32 ps-6 relative z-10"
+              class="lg:text-4xl md:text-3xl text-2xl font-secondary font-bold group-hover:underline text-primary group-hover:text-secondary transition duration-300 capitalize -mt-32 ps-6 relative z-10"
             >
               Repellendus itaque voluptates cumque cupiditate! Nulla, aperiam.
             </h2>
@@ -216,13 +278,13 @@
         </div>
       </main>
       <!-- Article -->
-      <section class="grid grid-cols-4 gap-6 my-44 items-start">
+      <section class="grid grid-cols-4 lg:gap-6 gap-20 lg:my-44 my-20 items-start">
         <h3
-          class="text-4xl capitalize col-span-2 sticky top-40 font-extrabold font-secondary leading-none text-secondary"
+          class="lg:text-4xl md:text-3xl text-2xl capitalize lg:col-span-2 col-span-4 lg:sticky top-40 font-extrabold font-secondary leading-none text-secondary"
         >
           Facilis in aliquid nesciunt. Voluptatibus libero voluptas eaque!
         </h3>
-        <div class="col-span-2 flex flex-col gap-4 bg-secondary dark:text-background p-8 relative">
+        <div class="lg:col-span-2 col-span-4 flex flex-col gap-4 bg-secondary dark:text-background p-8 relative">
           <p
             class="absolute text-text top-0 left-5 -translate-y-2/3 text-2xl font-extrabold tracking-tighter leading-tight font-secondary"
           >
@@ -359,8 +421,8 @@
         </div>
       </section>
       <!-- Article -->
-      <section class="grid grid-cols-4 gap-6 my-44 items-start">
-        <div class="col-span-2 flex flex-col gap-4 bg-primary p-8 relative">
+      <section class="grid grid-cols-4 lg:gap-6 gap-20 lg:my-44 my-20 items-start">
+        <div class="lg:col-span-2 col-span-4 flex flex-col gap-4 bg-primary p-8 relative lg:order-1 order-2">
           <p
             class="absolute top-0 left-5 -translate-y-2/3 text-2xl font-extrabold tracking-tighter leading-tight font-secondary"
           >
@@ -496,22 +558,24 @@
           </a>
         </div>
         <h3
-          class="text-4xl capitalize col-span-2 sticky top-40 text-end font-extrabold font-secondary leading-none text-primary"
+          class="lg:text-4xl md:text-3xl text-2xl capitalize lg:col-span-2 col-span-4 lg:sticky top-40 text-end font-extrabold font-secondary leading-none text-primary lg:order-2 order-1"
         >
           Facilis in aliquid nesciunt. Voluptatibus libero voluptas eaque!
         </h3>
       </section>
       <!-- Tech Article -->
-      <section class="my-44 grid grid-cols-2 gap-8 items-start">
-        <div class="flex items-start gap-8 sticky top-40">
+      <section class="lg:my-44 my-20 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="flex items-start lg:gap-8 gap-4 lg:sticky top-40">
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+            <h3
+              class="lg:text-lg text-sm font-medium bg-primary py-3 lg:px-6 px-4 font-secondary dark:text-background leading-none"
+            >
               Tech
             </h3>
             <a href="./category.html" class="text-xs text-end font-medium underline capitalize">View All</a>
           </div>
           <div class="flex flex-col gap-4">
-            <h2 class="capitalize text-2xl font-extrabold leading-none font-secondary">
+            <h2 class="capitalize lg:text-2xl text-xl font-extrabold leading-none font-secondary">
               animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
             </h2>
             <p class="text-xs">
@@ -524,7 +588,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -538,7 +602,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -552,7 +616,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -566,7 +630,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -580,7 +644,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -594,7 +658,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -608,7 +672,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -622,16 +686,18 @@
         </div>
       </section>
       <!-- Automobile Article -->
-      <section class="my-44 grid grid-cols-2 gap-8 items-start">
-        <div class="flex items-start gap-8 sticky top-40">
+      <section class="lg:my-44 my-20 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="flex items-start lg:gap-8 gap-4 lg:sticky top-40">
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+            <h3
+              class="lg:text-lg text-sm font-medium bg-primary py-3 lg:px-6 px-4 font-secondary dark:text-background leading-none"
+            >
               Automobile
             </h3>
             <a href="./category.html" class="text-xs text-end font-medium underline capitalize">View All</a>
           </div>
           <div class="flex flex-col gap-4">
-            <h2 class="capitalize text-2xl font-extrabold leading-none font-secondary">
+            <h2 class="capitalize lg:text-2xl text-xl font-extrabold leading-none font-secondary">
               animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
             </h2>
             <p class="text-xs">
@@ -644,7 +710,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -658,7 +724,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -672,7 +738,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -686,7 +752,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -700,7 +766,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -714,7 +780,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -728,7 +794,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -742,16 +808,18 @@
         </div>
       </section>
       <!-- Entertainment Article -->
-      <section class="my-44 grid grid-cols-2 gap-8 items-start">
-        <div class="flex items-start gap-8 sticky top-40">
+      <section class="lg:my-44 my-20 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="flex items-start lg:gap-8 gap-4 lg:sticky top-40">
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+            <h3
+              class="lg:text-lg text-sm font-medium bg-primary py-3 lg:px-6 px-4 font-secondary dark:text-background leading-none"
+            >
               Entertainment
             </h3>
             <a href="./category.html" class="text-xs text-end font-medium underline capitalize">View All</a>
           </div>
           <div class="flex flex-col gap-4">
-            <h2 class="capitalize text-2xl font-extrabold leading-none font-secondary">
+            <h2 class="capitalize lg:text-2xl text-xl font-extrabold leading-none font-secondary">
               animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
             </h2>
             <p class="text-xs">
@@ -764,7 +832,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -778,7 +846,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -792,7 +860,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -806,7 +874,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -820,7 +888,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -834,7 +902,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -848,7 +916,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -862,16 +930,18 @@
         </div>
       </section>
       <!-- Politics Article -->
-      <section class="my-44 grid grid-cols-2 gap-8 items-start">
-        <div class="flex items-start gap-8 sticky top-40">
+      <section class="lg:my-44 my-20 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="flex items-start lg:gap-8 gap-4 lg:sticky top-40">
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+            <h3
+              class="lg:text-lg text-sm font-medium bg-primary py-3 lg:px-6 px-4 font-secondary dark:text-background leading-none"
+            >
               Politics
             </h3>
             <a href="./category.html" class="text-xs text-end font-medium underline capitalize">View All</a>
           </div>
           <div class="flex flex-col gap-4">
-            <h2 class="capitalize text-2xl font-extrabold leading-none font-secondary">
+            <h2 class="capitalize lg:text-2xl text-xl font-extrabold leading-none font-secondary">
               animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
             </h2>
             <p class="text-xs">
@@ -884,7 +954,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -898,7 +968,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -912,7 +982,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -926,7 +996,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -940,7 +1010,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -954,7 +1024,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -968,7 +1038,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -982,16 +1052,18 @@
         </div>
       </section>
       <!-- Science Article -->
-      <section class="my-44 grid grid-cols-2 gap-8 items-start">
-        <div class="flex items-start gap-8 sticky top-40">
+      <section class="lg:my-44 my-20 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="flex items-start lg:gap-8 gap-4 lg:sticky top-40">
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+            <h3
+              class="lg:text-lg text-sm font-medium bg-primary py-3 lg:px-6 px-4 font-secondary dark:text-background leading-none"
+            >
               Science
             </h3>
             <a href="./category.html" class="text-xs text-end font-medium underline capitalize">View All</a>
           </div>
           <div class="flex flex-col gap-4">
-            <h2 class="capitalize text-2xl font-extrabold leading-none font-secondary">
+            <h2 class="capitalize lg:text-2xl text-xl font-extrabold leading-none font-secondary">
               animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
             </h2>
             <p class="text-xs">
@@ -1004,7 +1076,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1018,7 +1090,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1032,7 +1104,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1046,7 +1118,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1060,7 +1132,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1074,7 +1146,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1088,7 +1160,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1102,16 +1174,18 @@
         </div>
       </section>
       <!-- Podcasts Article -->
-      <section class="mt-44 grid grid-cols-2 gap-8 items-start">
-        <div class="flex items-start gap-8 sticky top-40">
+      <section class="lg:my-44 my-20 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="flex items-start lg:gap-8 gap-4 lg:sticky top-40">
           <div class="flex flex-col gap-4">
-            <h3 class="text-lg font-medium bg-primary py-3 px-6 font-secondary dark:text-background leading-none">
+            <h3
+              class="lg:text-lg text-sm font-medium bg-primary py-3 lg:px-6 px-4 font-secondary dark:text-background leading-none"
+            >
               Podcasts
             </h3>
             <a href="./category.html" class="text-xs text-end font-medium underline capitalize">View All</a>
           </div>
           <div class="flex flex-col gap-4">
-            <h2 class="capitalize text-2xl font-extrabold leading-none font-secondary">
+            <h2 class="capitalize lg:text-2xl text-xl font-extrabold leading-none font-secondary">
               animi non sit, pariatur omnis excepturi quisquam ipsa et eaque dicta.
             </h2>
             <p class="text-xs">
@@ -1124,7 +1198,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1138,7 +1212,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1152,7 +1226,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1166,7 +1240,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1180,7 +1254,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1194,7 +1268,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1208,7 +1282,7 @@
           <a href="./blogdetail.html" class="flex flex-col gap-4 group">
             <img src="./src/assets/images/img1.jpg" alt="..." class="block w-full aspect-square object-cover mx-auto" />
             <h3
-              class="capitalize text-3xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
+              class="capitalize lg:text-3xl md:text-2xl text-xl font-secondary font-extrabold group-hover:underline group-hover:text-primary transition duration-300 leading-none pl-8 text-secondary -mt-20"
             >
               "illo minima, adipisci dolor sequi enim expedita sint incidunt."
             </h3>
@@ -1224,7 +1298,9 @@
       <!-- Ad. Container -->
       <div class="h-44 mt-20 w-full bg-zinc-300 dark:bg-slate-600 text-sm flex justify-center items-center">Ad.</div>
       <!-- Footer -->
-      <footer class="flex justify-between items-start px-6 gap-6 font-secondary py-32">
+      <footer
+        class="flex lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start px-6 gap-6 font-secondary lg:py-32 py-20"
+      >
         <div class="flex gap-4 items-center text-2xl">
           <a
             href="#"
@@ -1245,9 +1321,9 @@
             <i class="bi bi-twitter"></i>
           </a>
         </div>
-        <div class="flex flex-col gap-4 items-end max-w-xl">
+        <div class="flex flex-col gap-4 lg:items-end items-center max-w-xl">
           <a href="./index.html" class="text-4xl font-bold uppercase w-fit italic">The Steam</a>
-          <div class="text-sm leading-none font-medium flex justify-end flex-wrap gap-3">
+          <div class="lg:text-sm text-xs leading-none font-medium flex lg:justify-end justify-center flex-wrap gap-3">
             <a href="./category.html" class="hover:underline">Entertainment</a>
             <a href="./category.html" class="hover:underline">Tech</a>
             <a href="./category.html" class="hover:underline">Automobile</a>
