@@ -2,31 +2,42 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --primary: #29aaff;
-  --secondary: #f9c300;
-  --text: #112d4e;
-  --background: #f9f7f7;
+  --grey: #eee;
+  --black: #000;
+  --white: #fff;
 }
 
 .dark {
-  --primary: #29aaff;
-  --secondary: #bbdc00;
-  --text: #f9f7f7;
-  --background: #222831;
+  --grey: #333;
+  --black: #fff;
+  --white: #000;
 }
 
 @theme {
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Hubot Sans", sans-serif;
+  --color-grey: var(--grey);
+  --color-black: var(--black);
+  --color-white: var(--white);
+}
 
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-text: var(--text);
-  --color-background: var(--background);
+* {
+  font-family: "Courier Prime", monospace;
 }
 
 button {
   cursor: pointer;
+}
+
+::selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.paragraph {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .blog-content {
@@ -35,7 +46,6 @@ button {
   h3,
   h4 {
     font-weight: 800;
-    font-family: "Hubot Sans", sans-serif;
     margin: 20px 0 12px 0;
   }
   h1 {
@@ -107,17 +117,4 @@ button {
       font-size: 14px;
     }
   }
-}
-
-::selection {
-  background-color: var(--secondary);
-  color: var(--background);
-}
-
-.paragraph {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  overflow: hidden;
 }
