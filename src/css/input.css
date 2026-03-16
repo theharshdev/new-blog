@@ -21,6 +21,8 @@
 
 * {
   font-family: "Courier Prime", monospace;
+  letter-spacing: -1px;
+  word-spacing: -3px;
 }
 
 button {
