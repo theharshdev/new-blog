@@ -290,6 +290,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -347,8 +350,14 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .translate-x-0 {
     --tw-translate-x: calc(var(--spacing) * 0);
@@ -358,9 +367,16 @@
     --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-translate-y-2 {
+    --tw-translate-y: calc(var(--spacing) * -2);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-y-2\/3 {
     --tw-translate-y: calc(calc(2 / 3 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -535,9 +551,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[8px\] {
-    font-size: 8px;
-  }
   .leading-0 {
     --tw-leading: calc(var(--spacing) * 0);
     line-height: calc(var(--spacing) * 0);
@@ -589,11 +602,18 @@
   .italic {
     font-style: italic;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .decoration-1 {
     text-decoration-thickness: 1px;
   }
   .underline-offset-4 {
     text-underline-offset: 4px;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -727,6 +747,26 @@
   .lg\:sticky {
     @media (width >= 64rem) {
       position: sticky;
+    }
+  }
+  .lg\:top-2 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 2);
+    }
+  }
+  .lg\:top-3 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:top-28 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 28);
+    }
+  }
+  .lg\:top-30 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 30);
     }
   }
   .lg\:top-32 {
